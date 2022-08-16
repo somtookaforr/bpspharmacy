@@ -19,7 +19,7 @@ const Index = () => {
                     <h1 className='text-5xl lg:text-6xl'><span className="txtorange">Lörem</span> ipsum den diligt bobel <span className="text-[#00923F]">akagen co-creation.</span>  </h1>
                     <p className='text-base lg:text-lg py-4 pr-20 md:pr-0'>Lörem ipsum planade pure players Olle Berggren sese lav, big data nyning telekrati epiboskap drop shipping anera endless aisles om it eftersom ahässa.</p>
                     <div className="flex gap-x-4 my-4">
-                        <button className="bgorange text-white rounded h-14 lg:w-52 w-32">Get Started</button>
+                        <button className="bgorange text-white rounded h-14 w-52">Get Started</button>
                     </div>
                 </div>
             </div>
