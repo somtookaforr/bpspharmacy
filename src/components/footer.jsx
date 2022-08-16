@@ -5,7 +5,7 @@ import { BsEnvelopeFill, BsTelephoneFill, BsWhatsapp, BsInstagram } from 'react-
 
 const footer = () => {
   return (
-    <footer className='bg-[#00923F] text-neutral-200 text-xs md:text-sm'>
+    <footer className='bg-[#00923F] text-neutral-200 text-sm'>
         <div className="grid grid-cols-12 py-12 px-10 md:px-16">
             <div className='col-span-12 lg:col-span-5 md:pr-40 mb-10 lg:mb-0'>
                 <img src={logo} alt="" className='w-2/6'/> 
