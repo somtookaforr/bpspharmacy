@@ -17,7 +17,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 px-6 md:px-16">
                 <div className='py-20 pb-36'>
                     <h1 className='text-3xl lg:text-6xl'><span className="txtorange">Lörem</span> ipsum den diligt bobel <span className="text-[#00923F]">akagen co-creation.</span>  </h1>
-                    <p className='text-base lg:text-lg py-4'>Lörem ipsum planade pure players Olle Berggren sese lav, big data nyning telekrati epiboskap drop shipping anera endless aisles om it eftersom ahässa.</p>
+                    <p className='text-base lg:text-lg py-4 pr-20 md:pr-0'>Lörem ipsum planade pure players Olle Berggren sese lav, big data nyning telekrati epiboskap drop shipping anera endless aisles om it eftersom ahässa.</p>
                     <div className="flex gap-x-4 my-4">
                         <button className="bgorange text-white rounded h-14 lg:w-52 w-32">Get Started</button>
                     </div>
@@ -27,7 +27,7 @@ const Index = () => {
 
         <section className="bg-[#00923F] px-10 md:px-16 py-20 text-white" id='about'>
             <div className="grid lg:grid-cols-2">
-                <div><img src={pic1} alt="" className='h-5/6'/></div>
+                <div><img src={pic1} alt="" className='object-contain h-5/6'/></div>
 
                 <div className='grid'>
                 <AnimationOnScroll animateIn="animate__fadeIn">
