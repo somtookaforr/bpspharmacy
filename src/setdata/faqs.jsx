@@ -6,7 +6,7 @@ const Accordion = ({ heading, content }) => {
   return (
     <li className="accordion-item">
       <div className="accordion-toggle" onClick={() => setIsActive(!isActive)}>
-        <h3 className="font-medium text-sm md:text-lg">{heading}</h3><span>{isActive ? <AiOutlineMinusCircle className="text-[#F38722]"/> : <AiOutlinePlusCircle className="text-[#F38722]"/> }</span>
+        <h3 className="font-medium text-lg">{heading}</h3><span>{isActive ? <AiOutlineMinusCircle className="text-[#F38722]"/> : <AiOutlinePlusCircle className="text-[#F38722]"/> }</span>
       </div>
       {isActive && <div className="accordion-content text-gray-500 font-normal">{content}</div>}
     </li>
