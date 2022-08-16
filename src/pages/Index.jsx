@@ -32,7 +32,7 @@ const Index = () => {
                 <div className='grid mt-16 lg:mt-0'>
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div>
-                        <h3 className='text-xl lg:text-4xl mb-6'>Who We Are</h3>
+                        <h3 className='text-2xl lg:text-4xl mb-6'>Who We Are</h3>
                         <p>Lörem ipsum kronat omniexperience. Lagen rekemi Elias Åberg, miling. Metaitet niren i ibed. Egovasa conversational commerce. Tiving desamma, i anasion höpygon, SME. 
                         Geovinde deminomi. Fav vingen, resion suligt oaktat omivis. Ukibel vilig exohånade. Decipen Lovisa Ahmed i orade. Transsocial Madeleine Svensson tena. 
                         Dirtad plabel pred heterod erad. Berat filofili. Fur mikrobyrad dengar bedorade. Ang dekaledes våtujåbäd Hans Hedlund. Kide valedes pladek. 
@@ -41,7 +41,7 @@ const Index = () => {
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__fadeIn'>
                     <div className='mt-12'>
-                        <h3 className='text-xl lg:text-4xl mb-6'>What We Do</h3>
+                        <h3 className='text-2xl lg:text-4xl mb-6'>What We Do</h3>
                         <p>Lörem ipsum kronat omniexperience. Lagen rekemi Elias Åberg, miling. Metaitet niren i ibed. Egovasa conversational commerce. Tiving desamma, i anasion höpygon, SME. 
                         Geovinde deminomi. Fav vingen, resion suligt oaktat omivis. Ukibel vilig exohånade. Decipen Lovisa Ahmed i orade. Transsocial Madeleine Svensson tena. 
                         Dirtad plabel pred heterod erad. Berat filofili. Fur mikrobyrad dengar bedorade. Ang dekaledes våtujåbäd Hans Hedlund. Kide valedes pladek. 
@@ -54,7 +54,7 @@ const Index = () => {
 
         <section className='px-10 md:px-16 py-20' id='products'>
             <div className="text-center lg:px-60 pb-12">
-                <h3 className="txtorange text-xl lg:text-4xl">Our Products</h3>
+                <h3 className="txtorange text-2xl lg:text-4xl">Our Products</h3>
                 <p>Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. </p>
             </div>
             <AnimationOnScroll animateIn='animate__fadeIn'>   
@@ -62,8 +62,8 @@ const Index = () => {
             </AnimationOnScroll>
         </section>
 
-        <section className="px-10 md:px-16 py-20" id='faqs'>
-            <h1 className='txtorange text-xl lg:text-4xl'>Frequently Asked Questions</h1>
+        <section className="bg-[#F5F5F5] px-10 md:px-16 py-20" id='faqs'>
+            <h1 className='txtorange text-2xl lg:text-4xl'>Frequently Asked Questions</h1>
             <AnimationOnScroll animateIn='animate__fadeIn'>
                 <div className="grid lg:grid-cols-2">
                     <div className='self-center'><FAQS /></div>
@@ -79,7 +79,7 @@ const Index = () => {
                 </div>
                 <div className="lg:pl-20 mb-20 lg:mb-0">
                     <AnimationOnScroll animateIn='animate__fadeIn'>   
-                        <h1 className='text-xl lg:text-4xl text-left'>Contact Us</h1>
+                        <h1 className='text-2xl lg:text-4xl text-left'>Contact Us</h1>
                         <h5 className='text-lg lg:text-xl pt-6 pb-2'>Branch 1</h5>
                         <p className=''>Lörem ipsum diskapet psykomatisk roning låvade, usk. Regramma Periscope. Disruptive labelt Adwords maskininlärning. Prenat sav inkubator. Sedat nekask, Josefin Magnusson. <br />  Prenat sav inkubator. Sedat nekask, Josefin Magnusson. </p>
                         <button className="bgorange text-white rounded h-12 w-44 my-4">Contact</button>
