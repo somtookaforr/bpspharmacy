@@ -27,9 +27,9 @@ const Index = () => {
 
         <section className="bg-[#00923F] px-10 md:px-16 py-20 text-white" id='about'>
             <div className="grid lg:grid-cols-2">
-                <div><img src={pic1} alt="" className='object-contain h-5/6'/></div>
+                <div className='mb-0 pb-0'><img src={pic1} alt="" className='object-contain lg:h-5/6'/></div>
 
-                <div className='grid'>
+                <div className='grid mt-16 lg:mt-0'>
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div>
                         <h3 className='text-xl lg:text-3xl mb-6'>Who We Are</h3>
