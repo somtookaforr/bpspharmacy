@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Poppins&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h3, h5{
+  font-family: 'Inter', sans-serif;
+}
+
+h1{font-weight: 700;}
+
+h3{font-weight: 600;}
+
+.bgmain{
+  background-image: url('./imgs/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgorange, span.swiper-pagination-bullet-active{
+  background-color: #F38722;
+}
+
+.txtorange{color: #F38722;}
+
+div.swiper-pagination{
+  position: relative;
+  margin-top: 3rem;
+}
+
+
+
+  .accordion-item {
+    list-style: none;
+  }
+  .accordion-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em;
+  }
+
+  .accordion-toggle h3 {
+    margin: 0;
+  }
+  .accordion-content {
+    padding: 1em;
+  }
+
+  nav{
+    padding: .5rem 1.5rem .5rem 1.5rem !important;
+  }
+
+  nav li a{
+    font-size: 16px !important;
+  }
+
+  nav li a:hover{
+    color: #00923F !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    nav{
+      padding: .5rem 4rem .5rem 4rem !important;
+    }
+  }
