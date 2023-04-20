@@ -1,5 +1,6 @@
 {
   "name": "bpspharmacy",
+  "homepage": "https://bpspharmacy.com.ng/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
