@@ -7,19 +7,20 @@ import faqs from '../imgs/faqs.png'
 import Footer from '../components/footer'
 import "animate.css/animate.min.css";
 import {AnimationOnScroll} from 'react-animation-on-scroll'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Index = () => {
 
   return (
-    <div className=''>
-        <div className="py-2"><Navbar/></div>
+    <div>
+        <div className="py-2" id='navbar'><Navbar/></div>
         <section className="bgmain h-full" id='home'>
             <div className="grid md:grid-cols-2 px-6 md:px-16">
                 <div className='py-20 pb-36'>
                     <h1 className='text-5xl lg:text-6xl'><span className="txtorange">Lörem</span> ipsum den diligt bobel <span className="text-[#00923F]">akagen co-creation.</span>  </h1>
                     <p className='text-base lg:text-lg py-4 pr-20 md:pr-0'>Lörem ipsum planade pure players Olle Berggren sese lav, big data nyning telekrati epiboskap drop shipping anera endless aisles om it eftersom ahässa.</p>
                     <div className="flex gap-x-4 my-4">
-                        <button className="bgorange hover:bg-transparent transition ease-in-out hover:text-orange-500 hover:border-2 hover:border-green-700 text-white rounded-lg h-14 w-52">Get Started</button>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} hashSpy={true} offset={0} duration={500}> <button className="bgorange hover:bg-transparent transition ease-in-out hover:text-orange-500 hover:border-2 hover:border-green-700 text-white rounded-lg h-14 w-52">Get to know us </button> </Link>
                     </div>
                 </div>
             </div>
