@@ -8,6 +8,10 @@ import Footer from '../components/footer'
 import "animate.css/animate.min.css";
 import {AnimationOnScroll} from 'react-animation-on-scroll'
 import { Link, animateScroll as scroll } from "react-scroll";
+import { GiMedicines } from 'react-icons/gi'
+import { MdOutlineSync, MdOutlineCountertops, MdOutlineDeliveryDining } from 'react-icons/md'
+import { BsThermometerHalf, BsShieldPlus } from 'react-icons/bs'
+import { FaHandsHelping } from 'react-icons/fa'
 
 const Index = () => {
 
@@ -16,11 +20,11 @@ const Index = () => {
         <div className="py-2" id='navbar'><Navbar/></div>
         <section className="bgmain h-full" id='home'>
             <div className="grid md:grid-cols-2 px-6 md:px-16">
-                <div className='py-20 pb-36'>
-                    <h1 className='text-5xl lg:text-6xl'><span className="txtorange">Lörem</span> ipsum den diligt bobel <span className="text-[#00923F]">akagen co-creation.</span>  </h1>
-                    <p className='text-base lg:text-lg py-4 pr-20 md:pr-0'>Lörem ipsum planade pure players Olle Berggren sese lav, big data nyning telekrati epiboskap drop shipping anera endless aisles om it eftersom ahässa.</p>
+                <div className='py-32 pb-36'>
+                    <h1 className='text-5xl lg:text-6xl'>Welcome to <span className="txtorange">BPS</span>  <span className="text-[#00923F]">Pharmacy</span>  </h1>
+                    <p className='text-base lg:text-lg py-8 pr-20 md:pr-0'>Your trusted source for all your pharmaceutical needs where we are committed to providing exceptional service and care to our community. </p>
                     <div className="flex gap-x-4 my-4">
-                        <Link activeClass="active" to="about" spy={true} smooth={true} hashSpy={true} offset={0} duration={500}> <button className="bgorange hover:bg-transparent transition ease-in-out hover:text-orange-500 hover:border-2 hover:border-green-700 text-white rounded-lg h-14 w-52">Get to know us </button> </Link>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} hashSpy={true} offset={0} duration={500}> <button className="bgorange hover:bg-transparent transition ease-in-out hover:text-orange-500 hover:border-2 hover:border-green-700 text-white rounded-lg h-14 w-60">Get to know us </button> </Link>
                     </div>
                 </div>
             </div>
@@ -28,33 +32,76 @@ const Index = () => {
 
         <section className="bg-[#33590A] px-10 md:px-16 py-32 text-white" id='about'>
             <div className="grid lg:grid-cols-2">
-                <div className='mb-0 pb-0'><img src={pic1} alt="" className='object-contain lg:h-5/6 w-full'/></div>
+                <div className='mb-0 pb-0'><img src={pic1} alt="" className='object-contain lg:h-5/6 mx-auto lg:w-10/12 xl:w-full'/></div>
 
                 <div className='grid mt-16 lg:mt-0'>
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div>
                         <h3 className='text-2xl lg:text-4xl mb-6'>Who We Are</h3>
-                        <p>Lörem ipsum kronat omniexperience. Lagen rekemi Elias Åberg, miling. Metaitet niren i ibed. Egovasa conversational commerce. Tiving desamma, i anasion höpygon, SME. 
-                        Geovinde deminomi. Fav vingen, resion suligt oaktat omivis. Ukibel vilig exohånade. Decipen Lovisa Ahmed i orade. Transsocial Madeleine Svensson tena.
+                        <p>Our pharmacy was founded on the principles of professionalism, integrity, and compassion. We strive to create a welcoming and supportive environment where our customers feel valued and respected. We believe that every individual deserves access to high-quality healthcare and we work tirelessly to make that a reality.
                         </p>
                     </div>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__fadeIn'>
                     <div className='mt-12'>
                         <h3 className='text-2xl lg:text-4xl mb-6'>What We Do</h3>
-                        <p>Lörem ipsum kronat omniexperience. Lagen rekemi Elias Åberg, miling. Metaitet niren i ibed. Egovasa conversational commerce. Tiving desamma, i anasion höpygon, SME. 
-                        Geovinde deminomi. Fav vingen, resion suligt oaktat omivis. Ukibel vilig exohånade. Decipen Lovisa Ahmed i orade. Transsocial Madeleine Svensson tena.
+                        <p>We understand that healthcare can be complicated and confusing at times, which is why we are committed to providing clear and concise information to our customers. We strive to educate and empower our customers to make informed decisions about their health and wellbeing. 
                         </p>
+                        <p>At BPS Pharmacy, we are committed to providing exceptional pharmaceutical care and outstanding customer service to our community. Our team of highly skilled pharmacists and technicians are dedicated to ensuring that you receive the best possible care and attention.</p>
                     </div>  
                 </AnimationOnScroll>          
                 </div>
             </div>
         </section>
 
+        <section className="px-10 md:px-16 py-20" id='services'>
+        <div className="text-center pb-12">
+            <h1 className='font-bold text-2xl lg:text-4xl leading-10 txtorange'>Our Services</h1>
+            <p>Take a look at some of the services we offer.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <GiMedicines className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Prescription filling</p>
+            <p className='text-gray-500'>Filling and dispensing prescriptions from licensed healthcare providers.</p>
+          </div>
+          {/* <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <MdOutlineSync className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Medication synchronization</p>
+            <p className='text-gray-500'> Coordinating multiple medications to be filled and picked up at the same time for added convenience.</p>
+          </div> */}
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <MdOutlineCountertops className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Over-the-counter medications</p>
+            <p className='text-gray-500'>Selling a variety of non-prescription medications, supplements, and other health products.</p>
+          </div>
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <BsThermometerHalf className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Medical equipment</p>
+            <p className='text-gray-500'>Selling or renting medical equipment, such as wheelchairs and walkers.</p>
+          </div>
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <BsShieldPlus className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Health and wellness advice</p>
+            <p className='text-gray-500'>Offering advice and counseling on a variety of health topics, including weight management, smoking cessation, and disease prevention.</p>
+          </div>
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <MdOutlineDeliveryDining className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Home delivery</p>
+            <p className='text-gray-500'>Providing home delivery services for medications and other health-related products.</p>
+          </div>
+          <div className="py-7 px-5 rounded-lg bg-neutral-100">
+            <FaHandsHelping className='txtorange' size={24} />
+            <p className='text-xl font-semibold py-2'>Medication therapy management</p>
+            <p className='text-gray-500'>Working with patients and their healthcare providers to optimize medication regimens, identify drug interactions, and manage side effects.</p>
+          </div>
+        </div>
+        </section>
+        
         <section className='px-10 md:px-16 py-20' id='products'>
             <div className="text-center lg:px-60 pb-12">
                 <h3 className="txtorange text-2xl lg:text-4xl">Our Products</h3>
-                <p>Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. </p>
+                <p>Take a look at some of our products we you can find in any of our pharmacies. </p>
             </div>
             <AnimationOnScroll animateIn='animate__fadeIn'>   
                 <Products />
@@ -82,10 +129,9 @@ const Index = () => {
                 </div>
                 <div className="lg:pl-20 mb-20 lg:mb-0 self-center">
                     <AnimationOnScroll animateIn='animate__fadeIn' className='gap-y-6 grid'>   
-                        <h1 className='text-2xl lg:text-4xl text-left'>Contact Us</h1>
-                        <p className=''>Lörem ipsum diskapet psykomatisk roning låvade, usk. Regramma Periscope. Disruptive labelt Adwords maskininlärning. Prenat sav inkubator. Sedat nekask, Josefin Magnusson. <br />  Prenat sav inkubator. Sedat nekask, Josefin Magnusson. </p>
-                        <button className="bgorange hover:bg-transparent transition ease-in-out hover:text-orange-500 hover:border-2 hover:border-green-700 text-white rounded-lg h-12 my-4 w-full ">
-                            <span>Contact</span> </button>
+                        <h1 className='text-2xl lg:text-4xl text-left txtorange'>Contact Us</h1>
+                        <p className=''>Our pharmacy is easily accessible by public transportation and we have ample parking available for our customers. If you have trouble finding us, please don't hesitate to call us at <Link to="" className='text-[#00923F] font-semibold cursor-pointer' onClick={() => window.location = 'tel:+2348035439038'}>+234 803 543 9038</Link> and one of our friendly staff members will be happy to help you. </p>
+                        <p>Our pharmacy is open 10:00am - 09:00pm (WAT). We are open seven days a week for your convenience. We understand that our customers have busy schedules, so we make sure that our hours are flexible and accommodating.</p>
                     </AnimationOnScroll>
                 </div>
             </div>

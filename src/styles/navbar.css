@@ -41,13 +41,13 @@ nav{
     padding: 8px;
     text-decoration: none;
     font-size: 32px;
-    color: #818181;
+    color: #dadada;
     display: block;
     transition: 0.3s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: white;
   }
   
   .overlay .closebtn {

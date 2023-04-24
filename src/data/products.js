@@ -8,32 +8,27 @@ const products = [
     {
         id: "1",
         img: regain,
-        title: "Product",
-        description: "Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. "
+        title: "Regain"
     },
     {
         id: "2",
         img: gummies,
-        title: "Product",
-        description: "Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. "
+        title: "Lil Critters Gummy Vites"
     },
     {
         id: "3",
         img: brace,
-        title: "Product",
-        description: "Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. "
+        title: "Knee brace"
     },
     {
         id: "4",
         img: cream,
-        title: "Product",
-        description: "Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. "
+        title: "Diprobase Eczema Cream"
     },
     {
         id: "5",
         img: paste,
-        title: "Product",
-        description: "Lörem ipsum lonev tåkävis så teprelig Berit Berggren ben. Björn Lindholm nyser. Retinat SERP, radionetik. "
+        title: "Colgate Kids Toothpaste"
     },
 ]
 

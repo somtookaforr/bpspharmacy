@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Prducts from '../setdata/products'
 import productsData from "../data/products";
 
 import "swiper/css";
@@ -40,9 +39,14 @@ export default function products() {
         modules={[Pagination, Autoplay, Keyboard]}
         className="mySwiper"
       >
-        {productsData.map(({ img, title, description}) => (
+        {productsData.map(({ img, title}) => (
 
-        <SwiperSlide> <Prducts img={img} title={title} description={description}/> </SwiperSlide>
+        <SwiperSlide> 
+          <div className='border border-neutral-300 rounded-lg px-6 py-4 text-center'>
+          <img src={img} alt="" className='mx-auto h-40'/>
+          <p className="pt-4 text-gray-500">{title}</p>
+          </div>  
+        </SwiperSlide>
 
         ))}
 
