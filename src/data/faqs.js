@@ -3,7 +3,7 @@ const accordionData = [
     {
       heading: "What are your hours of operation?",
       content:
-        "Our pharmacy is open from 10:00am to 09:00pm (WAT) every day of the week.",
+        "Our pharmacy is open from 08:00am to 09:00pm (WAT) from Monday though Saturday and opens from 10:00am to 09:00pm (WAT) on Sunday.",
     },
     {
       heading: "Do I need a prescription to fill my medication?",
@@ -11,14 +11,14 @@ const accordionData = [
         "Yes, you need a valid prescription from a licensed healthcare provider to fill any medication.",
     },
     {
-      heading: "Do you offer delivery or curbside pickup?",
+      heading: "Do you offer delivery services?",
       content:
-        "Yes, we offer both medication synchronization and medication therapy management services to help you manage your medications more easily and effectively. Please speak with our pharmacist for more information.",
+        "Yes, we offer delivery services for our customers' convenience. Please contact us for more details.",
     },
     {
-      heading: "Do you offer medication synchronization or medication therapy management services?",
+      heading: "Do you offer medication therapy management services?",
       content:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "Yes, we offer medication therapy management services to help you manage your medications more easily and effectively. Please speak with our pharmacist for more information.",
     },
     {
       heading: "What should I do if I experience side effects or have questions about my medication?",

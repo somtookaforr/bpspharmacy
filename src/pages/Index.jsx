@@ -131,7 +131,7 @@ const Index = () => {
                     <AnimationOnScroll animateIn='animate__fadeIn' className='gap-y-6 grid'>   
                         <h1 className='text-2xl lg:text-4xl text-left txtorange'>Contact Us</h1>
                         <p className=''>Our pharmacy is easily accessible by public transportation and we have ample parking available for our customers. If you have trouble finding us, please don't hesitate to call us at <Link to="" className='text-[#00923F] font-semibold cursor-pointer' onClick={() => window.location = 'tel:+2348035439038'}>+234 803 543 9038</Link> and one of our friendly staff members will be happy to help you. </p>
-                        <p>Our pharmacy is open 10:00am - 09:00pm (WAT). We are open seven days a week for your convenience. We understand that our customers have busy schedules, so we make sure that our hours are flexible and accommodating.</p>
+                        <p>Our pharmacy is open 08:00am - 09:00pm (WAT) from Monday through Saturday and opens from 10:00am to 09:00pm (WAT) on Sunday. We are open seven days a week for your convenience. We understand that our customers have busy schedules, so we make sure that our hours are flexible and accommodating.</p>
                     </AnimationOnScroll>
                 </div>
             </div>

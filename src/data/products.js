@@ -2,7 +2,9 @@ import regain from '../imgs/regain-hair-cream.webp'
 import gummies from '../imgs/gummybears.webp'
 import brace from '../imgs/kneebrace.png' 
 import cream from '../imgs/Diprobase.webp'
-import paste from '../imgs/toothpaste.webp'
+import melatonin from '../imgs/melatonin.webp'
+import oil from '../imgs/black-cumin.png'
+import cerave from '../imgs/ceraVe.webp'
 
 const products = [
     {
@@ -12,8 +14,8 @@ const products = [
     },
     {
         id: "2",
-        img: gummies,
-        title: "Lil Critters Gummy Vites"
+        img: oil,
+        title: "Black Cumin Seed Oil"
     },
     {
         id: "3",
@@ -27,8 +29,17 @@ const products = [
     },
     {
         id: "5",
-        img: paste,
-        title: "Colgate Kids Toothpaste"
+        img: gummies,
+        title: "Lil Critters Gummy Vites"
+    },
+    {
+        id: "6",
+        img: melatonin,
+        title: "Melatonin Gummies"
+    },{
+        id: "7",
+        img: cerave,
+        title: "CeraVe products"
     },
 ]
 

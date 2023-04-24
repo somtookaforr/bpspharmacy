@@ -28,7 +28,7 @@ const footer = () => {
                 <h5 className='text-xs md:text-base pb-2 text-black'>Reach Out</h5>
                 <div className="flex gap-x-6">
                     <a href='https://instagram.com/bpspharmacy?igshid=YmMyMTA2M2Y=' target={'_blank'}><BsInstagram size={24}/></a>
-                    <Link to=""><BsWhatsapp size={24}/></Link>
+                    <a href="https://api.whatsapp.com/send?phone=2348035439038&text=Hi, my name is [name]. I reached out to you from your website and I have a question about [medication or health concern]." target={'_blank'}><BsWhatsapp size={24}/></a>
                 </div>
             </div>
         </div>
