@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Raleway:wght@600;800&display=swap');
 @import url(./styles/navbar.css);
 @import url(./styles/accordian.css);
 
@@ -16,14 +15,14 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 h1,h3, h5{
   font-family: 'Raleway', sans-serif
 }
 
-h1{font-weight: 700;}
+h1{font-weight: 800 !important;}
 
 h3{font-weight: 600;}
 

@@ -62,37 +62,37 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <GiMedicines className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Prescription filling</p>
+            <h5 className='text-xl font-semibold py-2'>Prescription filling</h5>
             <p className='text-gray-500'>Filling and dispensing prescriptions from licensed healthcare providers.</p>
           </div>
           {/* <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <MdOutlineSync className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Medication synchronization</p>
+            <h5 className='text-xl font-semibold py-2'>Medication synchronization</h5>
             <p className='text-gray-500'> Coordinating multiple medications to be filled and picked up at the same time for added convenience.</p>
           </div> */}
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <MdOutlineCountertops className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Over-the-counter medications</p>
+            <h5 className='text-xl font-semibold py-2'>Over-the-counter medications</h5>
             <p className='text-gray-500'>Selling a variety of non-prescription medications, supplements, and other health products.</p>
           </div>
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <BsThermometerHalf className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Medical equipment</p>
+            <h5 className='text-xl font-semibold py-2'>Medical equipment</h5>
             <p className='text-gray-500'>Selling or renting medical equipment, such as wheelchairs and walkers.</p>
           </div>
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <BsShieldPlus className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Health and wellness advice</p>
+            <h5 className='text-xl font-semibold py-2'>Health and wellness advice</h5>
             <p className='text-gray-500'>Offering advice and counseling on a variety of health topics, including weight management, smoking cessation, and disease prevention.</p>
           </div>
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <MdOutlineDeliveryDining className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Home delivery</p>
+            <h5 className='text-xl font-semibold py-2'>Home delivery</h5>
             <p className='text-gray-500'>Providing home delivery services for medications and other health-related products.</p>
           </div>
           <div className="py-7 px-5 rounded-lg bg-neutral-100">
             <FaHandsHelping className='txtorange' size={24} />
-            <p className='text-xl font-semibold py-2'>Medication therapy management</p>
+            <h5 className='text-xl font-semibold py-2'>Medication therapy management</h5>
             <p className='text-gray-500'>Working with patients and their healthcare providers to optimize medication regimens, identify drug interactions, and manage side effects.</p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Index = () => {
         
         <section className='px-10 md:px-16 py-20' id='products'>
             <div className="text-center lg:px-60 pb-12">
-                <h3 className="txtorange text-2xl lg:text-4xl">Our Products</h3>
+                <h1 className="txtorange text-2xl lg:text-4xl">Our Products</h1>
                 <p>Take a look at some of our products we you can find in any of our pharmacies. </p>
             </div>
             <AnimationOnScroll animateIn='animate__fadeIn'>   
