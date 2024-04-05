@@ -65,7 +65,9 @@ const Index = () => {
           <div className="grid mt-16 lg:mt-0">
             <AnimationOnScroll animateIn="animate__fadeIn">
               <div>
-                <h3 className="text-2xl lg:text-4xl mb-6">Who We Are</h3>
+                <h3 className="font-bold text-2xl lg:text-4xl mb-6 txtorange">
+                  Who We Are
+                </h3>
                 <p>
                   Our pharmacy was founded on the principles of professionalism,
                   integrity, and compassion. We strive to create a welcoming and
@@ -78,7 +80,9 @@ const Index = () => {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__fadeIn">
               <div className="mt-12">
-                <h3 className="text-2xl lg:text-4xl mb-6">What We Do</h3>
+                <h3 className="font-bold text-2xl lg:text-4xl mb-6 txtorange">
+                  What We Do
+                </h3>
                 <p>
                   We understand that healthcare can be complicated and confusing
                   at times, which is why we are committed to providing clear and

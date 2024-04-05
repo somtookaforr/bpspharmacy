@@ -33,14 +33,14 @@ const Navbar = () => {
         className={isSmallScreen ? "overlay" : "flex fullScreen"}
         style={{ height: `${navState.height}%` }}
       >
-        <div className="grid grid-cols-2 col-span-6 -mt-2 py-6 px-12 lg:px-6">
+        <div className="grid grid-cols-2 col-span-6 -mt-2 py-8 px-6 bg-white">
           <img src={logo} alt="BPS Pharmacy" className="h-12" />
           <IoClose
             onClick={closeNav}
             size={30}
             className={
               isSmallScreen
-                ? "ml-auto cursor-pointer self-center text-orange-500 bg-white rounded"
+                ? "ml-auto cursor-pointer self-center txtorange rounded"
                 : "hidden"
             }
           />
@@ -138,7 +138,9 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className={isSmallScreen ? "-mt-2 py-6 px-6" : "hidden"}>
+      <nav className={isSmallScreen ? "-mt-2 py-6 px-6 flex" : "hidden"}>
+        <img src={logo} alt="BPS Pharmacy" className="h-12" />
+
         <IoMenu
           onClick={openNav}
           size={30}
