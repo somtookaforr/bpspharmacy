@@ -187,7 +187,7 @@ const Index = () => {
           </h1>
           <AnimationOnScroll animateIn="animate__fadeIn">
             <div className="grid lg:grid-cols-2">
-              <div className="self-center">
+              <div className="mt-8 md:mt-20">
                 <FAQS />
               </div>
               <AnimationOnScroll

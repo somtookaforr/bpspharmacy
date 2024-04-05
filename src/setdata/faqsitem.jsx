@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 
-const Accordion = ({ heading, content }) => {
-  const [isActive, setIsActive] = useState(false);
-  const toggle = () => {
-    setIsActive(!isActive);
+const Accordion = ({ heading, content, isActive, onClick }) => {
+  const handleClick = () => {
+    onClick();
   };
 
   return (
     <li className="accordion-item">
-      <div className="accordion-toggle" onClick={toggle}>
+      <div
+        className="accordion-toggle"
+        onClick={handleClick}
+        role="button"
+        tabIndex={0}
+      >
         <h3 className="font-medium">{heading}</h3>
         <span className="mt-1">
           {isActive ? (
