@@ -1,99 +1,153 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../imgs/logo.png";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { IoClose } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+import { IoClose, IoMenu } from "react-icons/io5";
 
-const navbar = () => {
-  function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
+const Navbar = () => {
+  const [navState, setNavState] = useState({ height: 0, isOpen: false });
+  const openNav = () => {
+    setNavState({ height: 160, isOpen: true });
+  };
 
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
+  const closeNav = () => {
+    setNavState({ height: 0, isOpen: false });
+  };
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
-      <div id="myNav" className="overlay lg:hidden">
-        <div className="grid grid-cols-2 -mt-2 py-6 px-6 bg-white">
+      <nav
+        id="myNav"
+        className={isSmallScreen ? "overlay" : "flex fullScreen"}
+        style={{ height: `${navState.height}%` }}
+      >
+        <div className="grid grid-cols-2 col-span-6 -mt-2 py-6 px-12 lg:px-6">
           <img src={logo} alt="BPS Pharmacy" className="h-12" />
           <IoClose
             onClick={closeNav}
             size={30}
-            className="ml-auto cursor-pointer self-center"
+            className={
+              isSmallScreen
+                ? "ml-auto cursor-pointer self-center text-orange-500 bg-white rounded"
+                : "hidden"
+            }
           />
         </div>
-        <div className="overlay-content cursor-pointer mt-20">
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            Home
-          </Link>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            About
-          </Link>
-          <Link
-            activeClass="active"
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            Services
-          </Link>
-          <Link
-            activeClass="active"
-            to="products"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            Products
-          </Link>
-          <Link
-            activeClass="active"
-            to="faqs"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            FAQS
-          </Link>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-            onClick={closeNav}
-          >
-            Contact
-          </Link>
+        <div
+          className={
+            isSmallScreen
+              ? "overlay-content"
+              : "flex gap-x-6 self-center ml-auto"
+          }
+        >
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              Home
+            </Link>
+          </NavLink>
+
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              About
+            </Link>
+          </NavLink>
+
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              Services
+            </Link>
+          </NavLink>
+
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="products"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              Products
+            </Link>
+          </NavLink>
+
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="faqs"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              FAQS
+            </Link>
+          </NavLink>
+
+          <NavLink>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
+              Contact
+            </Link>
+          </NavLink>
         </div>
-      </div>
+      </nav>
+
+      <nav className={isSmallScreen ? "-mt-2 py-6 px-6" : "hidden"}>
+        <IoMenu
+          onClick={openNav}
+          size={30}
+          className="ml-auto cursor-pointer self-center"
+          id="openNav"
+        />
+      </nav>
     </>
   );
 };
 
-export default navbar;
+export default Navbar;

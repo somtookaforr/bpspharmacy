@@ -4,7 +4,7 @@ import FaqsData from "../data/faqs";
 
 const faqs = () => {
   return (
-    <ul className="faqs divide-y divide-slate-300">
+    <ul className="divide-y divide-slate-300">
       {FaqsData.map(({ heading, content }) => (
         <Faqs heading={heading} content={content} />
       ))}

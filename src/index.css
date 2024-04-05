@@ -11,6 +11,7 @@ body {
   margin-left: auto !important;
   margin-right: auto !important;
   line-height: 28px !important;
+  font-size: 18px;
 }
 
 code {
@@ -26,11 +27,23 @@ h1{font-weight: 800 !important;}
 
 h3{font-weight: 600;}
 
-.bgmain{
+section {
+padding: 8rem 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 8rem 6rem;
+  } 
+}
+
+section.bgmain{
   background-image: url('./imgs/bg.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
+  padding: initial;
+
 }
 
 .bgorange{

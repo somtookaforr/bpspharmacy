@@ -1,18 +1,18 @@
-nav{
-    padding: .5rem 1.5rem .5rem 1.5rem !important;
-}
+/* nav{
+    padding: .5rem 2rem;
+} */
 
 nav li a{
-font-size: 16px !important;
+font-size: 1rem;
 }
 
 nav li a:hover{
-color: #00923F !important;
+color: #00923F;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 nav{
-    padding: .5rem 4rem .5rem 4rem !important;
+    padding: .5rem 4rem 3rem 4rem;
 }
 }
 
@@ -24,6 +24,7 @@ nav{
     z-index: 1;
     top: 0;
     left: 0;
+    padding: 0;
     background: linear-gradient(0deg, rgba(15,26,4,1) 0%, rgba(82,141,18,1) 100%);
     overflow-y: hidden;
     transition: 0.5s;
@@ -34,35 +35,52 @@ nav{
     top: 5%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
+    padding: 0 2rem;
   }
   
   .overlay a {
-    padding: 8px;
+    padding: .5rem;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 1.25rem;
     color: #dadada;
     display: block;
     transition: 0.3s;
+    text-align: left;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: white;
+    color: rgb(249 115 22);
+    padding: .5rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
   }
   
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 1.25rem;
+    right: 2.8125rem;
+    font-size: 3.75rem;
+  }
+
+  .fullScreen a {
+    font-size: 20px;
+  }
+
+  .fullScreen a:hover, .fullScreen a:focus{
+    color: rgb(249 115 22);
+    text-decoration: underline ;
+    text-underline-offset: 4px;
+    cursor: pointer;
   }
   
   @media screen and (max-height: 450px) {
     .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 2.5rem;
+    top: .9375rem;
+    right: 2.1875rem;
     }
   }
